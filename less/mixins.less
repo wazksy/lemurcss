@@ -1,0 +1,48 @@
+// ===========================================
+// LemurCSS by @wazksy
+// mixins.less
+// ===========================================
+
+
+// .border-radius(Value);
+
+.border-radius(@radius: @radius) {
+	-moz-border-radius: @radius;
+	-webkit-border-radius: @radius;
+	border-radius: @radius;
+}
+
+// .box-shadow(Value [Horizontal Vertical Blur Color]);
+
+.box-shadow(@shadow) {
+	-moz-box-shadow: @shadow;
+	-webkit-box-shadow: @shadow;
+	box-shadow: @shadow;
+}
+
+// .box-sizing(Value); (border-box, padding-box, content-box)
+
+.box-sizing(@boxSize: border-box) {
+	-moz-box-sizing: @boxSize;
+	-ms-box-sizing: @boxSize;
+	-webkit-box-sizing: @boxSize;
+	box-sizing: @boxSize;
+}
+
+// .opacity(Value);
+
+.opacity(@opacity: 0.5) {
+	-moz-opacity: @opacity;
+	-webkit-opacity: @opacity;
+	opacity: @opacity;
+}
+
+// .transition(Value [Property Duration Delay (optional) Timing-function]);
+
+.transition(@transition: @transitionTime) {
+	-webkit-transition: @transition;
+	-moz-transition: @transition;
+	-ms-transition: @transition;
+	-o-transition: @transition;
+	transition: @transition;
+}

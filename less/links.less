@@ -1,0 +1,30 @@
+// ===========================================
+// LemurCSS by @wazksy
+// links.less
+// ===========================================
+
+a {
+	color: @linkColor;
+	text-decoration: none;
+
+	&:active {
+		outline: 0;
+	}
+
+	&:focus {
+		color: @linkFocusColor;
+		outline: thin dotted;
+		text-decoration: underline;
+	}
+
+	&:hover {
+		color: @linkHoverColor;
+		outline: 0;
+		text-decoration: underline;
+	}
+
+	&:visited {
+		color: @linkVisitedColor;
+		text-decoration: none;
+	}
+}

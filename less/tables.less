@@ -1,0 +1,52 @@
+// ===========================================
+// LemurCSS by @wazksy
+// tables.less
+// ===========================================
+
+table {
+	background: @tableBackgroundColor;
+	border: 1px solid @tableBorderColor;
+	.border-radius(@radius);
+	border-collapse: separate;
+	border-spacing: 0;
+	width: 100%;
+}
+
+tbody:first-child tr:first-child td,
+tbody:first-child tr:first-child th,
+thead:first-child tr:first-child th {
+	border-top: 0;
+}
+
+tbody tr td,
+tbody tr th {
+	.transition(background-color @transitionTime linear);
+}
+
+td,
+th {
+	border-top: 1px solid @tableBorderColor;
+	font-size: inherit;
+	line-height: @lineHeight;
+	padding: 8px;
+	text-align: left;
+	vertical-align: top;
+}
+
+tfoot {
+	border-top: 1px solid @tableBorderColor;
+}
+
+// classes
+
+.striped {
+	tbody tr:nth-child(odd),
+	tbody tr:nth-child(odd) {
+		background-color: @tableStripeColor;
+	}
+
+	tbody tr:hover td,
+	tbody tr:hover th {
+		background-color: @tableHoverColor;
+	}
+}

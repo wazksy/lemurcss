@@ -1,0 +1,104 @@
+// ===========================================
+// LemurCSS by @wazksy
+// variables.less
+// ===========================================
+
+// COLOURS			================================
+
+	@themeColor 			: #1abc9c;
+	@themeLigthColor 		: lighten(@themeColor, 10%);
+
+	@darkColor 				: #2c3e50;
+	@darkestColor 			: darken(@darkColor, 10%);
+
+	@lightColor 			: #ecf0f1;
+	@lightestColor 			: lighten(@lightColor, 10%);
+
+	@white 					: white;
+	@black 					: black;
+	@gray 					: #a7babe;
+
+	// Status
+	@alertColor 			: #e74c3c;
+	@infoColor 				: #2ecacc;
+	@successColor 			: #2ecc71;
+
+// BASE				================================
+
+	// Text
+	@fontFamily 			: Arial, sans-serif;
+	@fontSize 				: 16px;
+	@lineHeight 			: 1.2;
+
+	// Color
+	@backgroundColor 		: @lightestColor;
+	@borderColor			: @lightColor;
+	@fontColor 				: @darkestColor;
+
+	// Animations
+	@transitionTime 		: 0.25s;
+
+	// Layout
+	@margin 				: 0.8em; // Márgenes verticales y horizontales
+	@maxWidth 				: 1024px;
+	@padding 				: 1em;
+	@radius 				: 2px;
+
+	// Links
+	@linkColor				: #08c; ////////////////////////?
+	@linkFocusColor			: darken(@linkColor, 15%);
+	@linkHoverColor			: @linkFocusColor;
+	@linkVisitedColor		: @linkFocusColor;
+
+	// Heading
+	@h1FontSize 			: 2.6em;
+	@h2FontSize 			: 2.2em;
+	@h3FontSize 			: 1.8em;
+	@h4FontSize 			: 1.6em;
+	@h5FontSize 			: 1.3em;
+	@h6FontSize 			: 1em;
+
+	// Alternative font
+	@altFontFamily 			: Georgia, Times;
+	@altFontSize 			: @largeFontSize;
+
+	// Code
+	@codeBackground 		: @lightColor;
+	@codeFontColor 			: @fontColor;
+	@codeFontFamily 		: Monaco, Courier New, monospace;
+
+	// Tables
+	@tableBackgroundColor 	: @white;
+	@tableBorderColor 		: @lightColor;
+	@tableHoverColor 		: @themeLigthColor;
+	@tableStripeColor 		: @lightColor;
+
+	// Form
+	@inputBackground 		: @white;
+	@inputBorder 			: @borderColor;
+	@inputColor 			: @fontColor;
+	@inputFocusBorder 		: red;
+	@inputHeight 			: 30px;
+	@inputHoverBorder 		: @themeColor;
+
+// MODULES			================================
+
+// THEME			================================
+
+	// Fonts size
+	@largeFontSize 			: 1.3em;
+	@bigFontSize 			: 1.2em;
+	@smallFontSize 			: 0.8em;
+	@tinyFontSize 			: 0.7em;
+
+	// Buttons
+	@buttonColor 			: @themeColor;
+
+// BREAK POINTS		================================
+
+	// Break point - small screen first
+	@bp1 					: 30em;
+	@bp2 					: 37.5em;
+	@bp3 					: 48em;
+	@bp4 					: 56.25em;
+	@bp5 					: 68.75em;

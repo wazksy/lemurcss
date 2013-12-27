@@ -1,0 +1,98 @@
+// ===========================================
+// LemurCSS by @wazksy
+// buttons.less
+// ===========================================
+
+.btn {
+	background: @buttonColor;
+	border: none;
+	.border-radius(@radius);
+	.box-shadow(inset 0 -.1em 0 rgba(0,0,0,.1));
+	color: @white;
+	cursor: pointer;
+	display: inline-block;
+	font-family: inherit;
+	font-size: @fontSize;
+	font-weight: bold;
+	height: @inputHeight;
+	padding: 5px 6px 4px 5px;
+	text-align: center;
+	text-shadow: rgba(0,0,0,0.1) 0 1px 0;
+	.transition(all @transitionTime linear);
+	width: auto;
+
+	&:hover {
+		background: darken(@buttonColor, 3%);
+		text-decoration: none;
+	}
+
+	&.alert {
+		background: @alertColor;
+
+		&:hover {
+			background: darken(@alertColor, 3%);
+		}
+	}
+
+	&.info {
+		background: @infoColor;
+
+		&:hover {
+			background: darken(@infoColor, 3%);
+		}
+	}
+
+	&.success {
+		background: @successColor;
+
+		&:hover {
+			background: darken(@successColor, 3%);
+		}
+	}
+
+	&.secondary {
+		background: @gray;
+
+		&:hover {
+			background: darken(@gray, 3%);
+		}
+	}
+
+	&.white {
+		background: @white;
+		border: 1px solid @borderColor;
+		color: @fontColor;
+
+		&:hover {
+			background: darken(@white, 3%);
+		}
+	}
+
+	&.full {
+		display: block;
+		width: 100%;
+	}
+
+	&.large {
+		font-size: @largeFontSize;
+	}
+
+	&.big {
+		font-size: @bigFontSize;
+	}
+
+	&.small {
+		font-size: @smallFontSize;
+	}
+
+	&.tiny {
+		font-size: @tinyFontSize;
+	}
+
+	&.large,
+	&.big,
+	&.small,
+	&.tiny {
+		height: auto;
+	}
+}

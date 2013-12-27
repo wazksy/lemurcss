@@ -1,0 +1,78 @@
+// ===========================================
+// LemurCSS by @wazksy
+// theme.less
+// ===========================================
+
+// Layout
+
+section.wrapper {
+
+	> nav {
+		color: @white;
+		position: fixed;
+		width: 180px;
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+
+			a {
+				display: block;
+				padding: @padding / 2;
+				text-decoration: none;
+				width: 100%;
+
+				&:hover {
+					background: @lightColor;
+				}
+			}
+		}
+	}
+
+	> section {
+		width: 80%;
+		float: right;
+	}
+}
+
+// Example
+
+.example {
+	background: @white;
+	border: 1px solid @borderColor;
+	.border-radius(@radius);
+	padding: @padding;
+	padding-top: @padding * 2;
+	position: relative;
+
+	&:after {
+		color: @borderColor;
+		content: "Example";
+		font-size: @smallFontSize;
+		font-weight: bold;
+		left: 15px;
+		letter-spacing: 1px;
+		position: absolute;
+		text-transform: uppercase;
+		top: 15px;
+	}
+
+	&.code {
+		background: @borderColor;
+		font-size: 0.8em;
+		margin-bottom: @margin;
+	}
+}
+
+.nt {
+	color: #2f6f9f;
+}
+
+.na {
+	color: #4f9fcf;
+}
+
+.s {
+	color: #d44950;
+}

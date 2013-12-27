@@ -1,0 +1,159 @@
+// ===========================================
+// LemurCSS by @wazksy
+// forms.less
+// ===========================================
+
+button,
+input,
+select,
+textarea {
+	font-family: inherit;
+	line-height: @lineHeight;
+	margin: 0 0 @margin / 4 0;
+	vertical-align: baseline;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+
+fieldset {
+	border-width: 0;
+	margin-bottom: @margin;
+}
+
+input,
+select,
+textarea {
+	background-color: @inputBackground;
+	color: @inputColor;
+	display: inline-block;
+	padding: 5px;
+	width: 100%;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+input[type="file"],
+input[type="image"],
+select,
+textarea {
+	border: 1px solid @inputBorder;
+	.border-radius(@radius);
+	.transition(all @transitionTime linear);
+
+	&:hover {
+		border-color: @inputHoverBorder;
+	}
+
+	&:focus {
+		border-color: @inputFocusBorder;
+		outline: 0;
+	}
+}
+
+input {
+	height: @inputHeight;
+
+	&[type="checkbox"],
+	&[type="image"],
+	&[type="radio"] {
+		cursor: pointer;
+		height: auto;
+		line-height: normal;
+		padding: 0; // Removes excess padding in IE 8/9.
+		width: auto;
+	}
+
+	&[type="checkbox"],
+	&[type="radio"] {
+		margin-right: 4px;
+		vertical-align: middle;
+	}
+
+	&[type="checkbox"]:focus,
+	&[type="checkbox"]:hover,
+	&[type="file"]:focus,
+	&[type="file"]:hover,
+	&[type="radio"]:focus,
+	&[type="radio"]:hover {
+		.box-shadow(none);
+	}
+
+	&[type="file"] {
+		width: auto;
+	}
+
+	&[type="hidden"] {
+		display: none;
+	}
+}
+
+input[disabled],
+input[readonly],
+select[disabled],
+select[readonly],
+textarea[disabled],
+textarea[readonly] {
+	background: @borderColor;
+	cursor: not-allowed;
+
+	&:focus,
+	&:hover {
+		border-color: @inputBorder;
+		.box-shadow(none);
+	}
+}
+
+label {
+	color: inherit;
+	display: block;
+	font-size: @fontSize;
+	margin-bottom: @margin / 4;
+	position: relative;
+	top: 2px;
+	vertical-align: baseline;
+}
+
+legend {
+	border: 0;
+	border-bottom: 1px solid @inputBorder;
+	color: inherit;
+	display: block;
+	font-size: @bigFontSize;
+	margin-bottom: @margin;
+	padding-bottom: 0.5em;
+	width: 100%;
+}
+
+textarea {
+	overflow: auto; // Removes default vertical scrollbar in IE 8/9.
+	vertical-align: top; // Improves readability and alignment in all browsers.
+}
+
+// classes
+
+.input {
+	margin-bottom: @margin / 2;
+
+	&.inline {
+		display: inline-block;
+		margin-right: @margin / 2;
+	}
+}

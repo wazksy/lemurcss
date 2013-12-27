@@ -1,0 +1,261 @@
+// ===========================================
+// LemurCSS by @wazksy
+// typography.less
+// ===========================================
+
+abbr[title] {
+	border-bottom: 1px dotted @fontColor;
+	cursor: help;
+}
+
+address,
+blockquote,
+dl,
+ol,
+p,
+ul {
+	margin-bottom: @margin;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+blockquote {
+	font-family: @altFontFamily;
+	font-size: @altFontSize;
+}
+
+cite {
+	font-style: italic;
+}
+
+code,
+kbd,
+pre,
+samp,
+var {
+	background: @codeBackground;
+	color: @codeFontColor;
+	font-family: @codeFontFamily;
+}
+
+dd {
+	margin-left: @margin;
+}
+
+dfn {
+	font-style: italic;
+}
+
+dt {
+	font-weight: bold;
+}
+
+em,
+i {
+	font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	line-height: 1em;
+	margin-bottom: @margin / 2;
+}
+
+h1 {
+	font-size: @h1FontSize;
+}
+
+h2 {
+	font-size: @h2FontSize;
+}
+
+h3 {
+	font-size: @h3FontSize;
+}
+
+h4 {
+	font-size: @h4FontSize;
+}
+
+h5 {
+	font-size: @h5FontSize;
+}
+
+h6 {
+	font-size: @h6FontSize;
+}
+
+mark {
+	color: @fontColor;
+	font-style: italic;
+	font-weight: bold;
+}
+
+ol,
+ul {
+	padding-left: @margin;
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+	margin-bottom: 0;
+}
+
+pre {
+	text-align: left;
+	padding: 0 6px;
+	white-space: pre-wrap;
+	white-space: pre;
+	word-wrap: break-word;
+
+	code {
+		background-color: transparent;
+		border: 0;
+		color: inherit;
+		padding: 0;
+		white-space: pre-wrap;
+		white-space: pre;
+	}
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+// classes
+
+// blockquotes
+
+blockquote.center {
+	text-align: center;
+}
+
+// color
+.color {
+
+	&.default {
+		color: @fontColor;
+	}
+
+	&.colorful {
+		color: @themeColor;
+	}
+
+	&.white {
+		color: @white;
+	}
+}
+
+// text
+.text {
+
+	&.large {
+		font-size: @largeFontSize;
+	}
+
+	&.big {
+		font-size: @bigFontSize;
+	}
+
+	&.small {
+		font-size: @smallFontSize;
+	}
+
+	&.tiny {
+		font-size: @tinyFontSize;
+	}
+
+	&.shadow {
+		text-shadow: rgba(0,0,0,0.1) 0 1px 0;
+	}
+
+	&.uppercase {
+		text-transform: uppercase;
+	}
+
+	&.bold {
+		font-weight: bold;
+	}
+
+	&.normal {
+		font-weight: normal;
+	}
+
+	&.book {
+		font-weight: 300;
+	}
+
+	&.thin {
+		font-weight: 100;
+	}
+
+	&.center {
+		text-align: center;
+	}
+
+	&.justify {
+		text-align: justify;
+	}
+
+	&.left {
+		text-align: left;
+	}
+
+	&.right {
+		text-align: right;
+	}
+}
+
+// titles
+
+h1.title,
+h2.title,
+h3.title {
+	border-bottom: 1px solid @borderColor;
+	margin-bottom: @margin;
+	padding-bottom: @padding / 4;
+}
+
+// list
+
+.list {
+	&.inline {
+		padding-left: 0;
+		list-style: none;
+
+		li {
+			display: inline-block;
+		}
+	}
+
+	&.unstyled {
+		padding-left: 0;
+		list-style: none;
+	}
+}

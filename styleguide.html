@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Style Guide - LemurCSS</title>
+
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!--[if (lt IE 9) & (!IEMobile)]>
+	<script src="js/vendor/selectivizr-min.js"></script>
+	<![endif]-->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+	<section class="wrapper">
+
+		<nav>
+			<ul>
+				<li><a href="#typography">Typography</a></li>
+				<li><a href="#code">Code</a></li>
+				<li><a href="#tables">Tables</a></li>
+				<li><a href="#buttons">Buttons</a></li>
+				<li><a href="#forms">Forms</a></li>
+				<li><a href="#images">Images</a></li>
+			</ul>
+		</nav>
+
+		<section>
+
+			<!-- Typography ------------------------------------------------------------------------ -->
+
+			<article>
+
+				<h2 class="title"><a name="typography"></a>Typography</h2>
+
+				<h3>Headings</h3>
+
+				<div class="example">
+					<h1>Heading 1</h1>
+					<h2>Heading 2</h2>
+					<h3>Heading 3</h3>
+					<h4>Heading 4</h4>
+					<h5>Heading 5</h5>
+					<h6>Heading 6</h6>
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;h1&gt;</span>Heading 1<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>Heading 2<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>Heading 3<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>Heading 4<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>Heading 5<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>Heading 6<span class="nt">&lt;/h6&gt;</span>
+</pre>
+
+				<h3>Paragraph</h3>
+
+				<div class="example">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, facilis veniam quasi suscipit aliquid libero culpa molestiae nisi possimus aperiam cumque nobis delectus. Mollitia, facilis tempore numquam incidunt quidem quod.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, quia, beatae, nesciunt quam animi error saepe dolores inventore totam magni aliquid neque adipisci maiores voluptatibus veritatis sit natus earum amet!</p>
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;p&gt;</span>Lorem...<span class="nt">&lt;/p&gt;</span>
+</pre>
+
+				<h3>Small</h3>
+
+				<div class="example">
+					<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;small&gt;</span>Lorem...<span class="nt">&lt;/small&gt;</span>
+</pre>
+
+				<h3>Bold</h3>
+
+				<div class="example">
+					<p>Lorem <strong>ipsum dolor sit amet</strong>, consectetur <b>adipisicing elit</b>.</p>
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;strong&gt;</span>strong<span class="nt">&lt;/strong&gt;</span>
+<span class="nt">&lt;b&gt;</span>b<span class="nt">&lt;/b&gt;</span>
+</pre>				
+
+				<h3>Italic</h3>
+
+				<div class="example">
+					<p>Eveniet, voluptatum, <em>dolorum quasi</em> illum possimus <i>reprehenderit minus</i> earum dolorem.</p>
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;em&gt;</span>em<span class="nt">&lt;/em&gt;</span>
+<span class="nt">&lt;i&gt;</span>italic<span class="nt">&lt;/i&gt;</span>
+</pre>
+
+				<h3>Blockquotes</h3>
+
+				<div class="example">
+					<blockquote>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, possimus, architecto illum vel vero magni tempore obcaecati quis sint quidem nam tempora voluptate cupiditate perferendis veritatis est in repudiandae amet.</p>
+					</blockquote>
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;blockquote&gt;</span>Lorem...<span class="nt">&lt;/blockquote&gt;</span>
+</pre>
+
+				<div class="example">
+					<blockquote class="center">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, possimus, architecto illum vel vero magni tempore obcaecati quis sint quidem nam tempora voluptate cupiditate perferendis veritatis est in repudiandae amet.</p>
+					</blockquote>
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;blockquote <span class="na">class=</span><span class="s">"center"</span>&gt;</span>Lorem...<span class="nt">&lt;/blockquote&gt;</span>
+</pre>
+
+				<h3>List</h3>
+
+				<div class="example">
+					<ul>
+						<li>lorem...</li>
+						<li>lorem...</li>
+						<li>lorem...</li>
+						<li>lorem...</li>
+					</ul>
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;ul&gt;</span>
+<span class="nt">&lt;li&gt;</span>lorem...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;</span>lorem...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;</span>lorem...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;</span>lorem...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre>
+
+				<div class="example">
+					<ol>
+						<li>lorem...</li>
+						<li>lorem...</li>
+						<li>lorem...</li>
+						<li>lorem...</li>
+					</ol>
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;ol&gt;</span>
+<span class="nt">&lt;li&gt;</span>lorem...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;</span>lorem...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;</span>lorem...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;</span>lorem...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</pre>
+
+				<div class="example">
+					<ul class="list unstyled">
+						<li>lorem...</li>
+						<li>lorem...</li>
+						<li>lorem...</li>
+						<li>lorem...</li>
+					</ul>
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;ul <span class="na">class=</span><span class="s">"list unstyled"</span>&gt;</span>
+<span class="nt">&lt;li&gt;</span>lorem...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;</span>lorem...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;</span>lorem...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;</span>lorem...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre>
+
+				<div class="example">
+					<ul class="list inline">
+						<li>lorem...</li>
+						<li>lorem...</li>
+						<li>lorem...</li>
+						<li>lorem...</li>
+					</ul>
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;ul <span class="na">class=</span><span class="s">"list inline"</span>&gt;</span>
+<span class="nt">&lt;li&gt;</span>lorem...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;</span>lorem...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;</span>lorem...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;</span>lorem...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre>
+
+				<div class="example">
+					<dl>
+						<dt>title</dt>
+						<dd>lorem...</dd>
+						<dt>title</dt>
+						<dd>lorem...</dd>
+					</dl>
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;dl&gt;</span>
+<span class="nt">&lt;dt&gt;</span>title<span class="nt">&lt;/dt&gt;</span>
+<span class="nt">&lt;dd&gt;</span>lorem...<span class="nt">&lt;/dd&gt;</span>
+<span class="nt">&lt;dt&gt;</span>title<span class="nt">&lt;/dt&gt;</span>
+<span class="nt">&lt;dd&gt;</span>lorem...<span class="nt">&lt;/dd&gt;</span>
+<span class="nt">&lt;/dl&gt;</span>
+</pre>
+
+				<h3>Abbreviations</h3>
+
+				<div class="example">
+					<abbr title="HyperText Markup Language">Html</abbr>
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;abbr <span class="na">title=</span><span class="s">"HyperText Markup Language"</span>&gt;</span>Html<span class="nt">&lt;/abbr&gt;</span>
+</pre>
+
+				<h3>Strike</h3>
+
+				<div class="example">
+					<s>Lorem ipsum dolor sit amet, consectetur adipisicing</s>
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;s&gt;</span>Lorem...<span class="nt">&lt;/s&gt;</span>
+</pre>
+
+				<h3>Citations</h3>
+
+				<div class="example">
+					<cite>Lorem ipsum dolor sit amet, consectetur adipisicing</cite>
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;cite&gt;</span>Lorem...<span class="nt">&lt;/cite&gt;</span>
+</pre>
+
+				<h3>Inline quotes</h3>
+
+				<div class="example">
+					<q>Lorem ipsum <q>lorem</q> dolor sit amet, consectetur adipisicing</q>
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;q&gt;</span>Lorem...<span class="nt">&lt;/q&gt;</span>
+</pre>
+
+				<h3>Definition</h3>
+
+				<div class="example">
+					<p>Lorem ipsum <dfn title="Dolor">dolor</dfn> sit amet, consectetur adipisicing</p>
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;dfn <span class="na">title=</span><span class="s">"Dolor"</span>&gt;</span>dolor<span class="nt">&lt;/dfn&gt;</span>
+</pre>
+
+				<h3>Time</h3>
+
+				<div class="example">
+					<p>Lorem ipsum <time datetime="1983-02-23">23 de Febrero de 1983</time> sit amet, consectetur adipisicing</p>
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;time <span class="na">datetime=</span><span class="s">"1983-02-23"</span>&gt;</span>23 de Febrero de 1983<span class="nt">&lt;/time&gt;</span>
+</pre>
+
+				<h3>Classes</h3>
+
+				<ul>
+					<li><code>.color .default</code></li>
+					<li><code>.color .colorful</code></li>
+					<li><code>.color .white</code></li>
+					<li><code>.text .large</code></li>
+					<li><code>.text .big</code></li>
+					<li><code>.text .small</code></li>
+					<li><code>.text .tiny</code></li>
+					<li><code>.text .shadow</code></li>
+					<li><code>.text .uppercase</code></li>
+					<li><code>.text .bold</code></li>
+					<li><code>.text .normal</code></li>
+					<li><code>.text .book</code></li>
+					<li><code>.text .thin</code></li>
+					<li><code>.text .center</code></li>
+					<li><code>.text .justify</code></li>
+					<li><code>.text .left</code></li>
+					<li><code>.text .rigth</code></li>
+					<li><code>h(1-6) .title</code></li>
+					<li><code>.list .inline</code></li>
+					<li><code>.list .unstyled</code></li>
+				</ul>
+				
+			</article>
+
+			<!-- Code ------------------------------------------------------------------------------ -->
+
+			<article>
+
+				<h2 class="title"><a name="code"></a>Code</h2>
+
+				<h3>Inline</h3>
+
+				<div class="example">
+					<p>Lorem ipsum dolor sit amet, <code>consectetur</code> adipisicing elit.</p>
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;code&gt;</span>consectetur<span class="nt">&lt;/code&gt;</span>
+</pre>
+
+				<h3>Block</h3>
+
+				<div class="example">
+					<pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</pre>
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;pre&gt;</span>Lorem...<span class="nt">&lt;/pre&gt;</span>
+</pre>
+				
+			</article>
+
+			<!-- Table ----------------------------------------------------------------------------- -->
+
+			<article>
+
+				<h2 class="title"><a name="tables"></a>Tables</h2>
+
+				<div class="example">
+					<table>
+						<thead>
+							<tr>
+								<th>Title 1</th>
+								<th>Title 2</th>
+								<th>Title 3</th>
+								<th>Title 4</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Row 1</td>
+								<td>Row 1</td>
+								<td>Row 1</td>
+								<td>Row 1</td>
+							</tr>
+							<tr>
+								<td>Row 2</td>
+								<td>Row 2</td>
+								<td>Row 2</td>
+								<td>Row 2</td>
+							</tr>
+							<tr>
+								<td>Row 3</td>
+								<td>Row 3</td>
+								<td>Row 3</td>
+								<td>Row 3</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;table&gt;</span>
+  <span class="nt">&lt;thead&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Title 1<span class="nt">&lt;th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/thead&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</pre>
+
+				<div class="example">
+					<table class="striped">
+						<thead>
+							<tr>
+								<th>Title 1</th>
+								<th>Title 2</th>
+								<th>Title 3</th>
+								<th>Title 4</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Row 1</td>
+								<td>Row 1</td>
+								<td>Row 1</td>
+								<td>Row 1</td>
+							</tr>
+							<tr>
+								<td>Row 2</td>
+								<td>Row 2</td>
+								<td>Row 2</td>
+								<td>Row 2</td>
+							</tr>
+							<tr>
+								<td>Row 3</td>
+								<td>Row 3</td>
+								<td>Row 3</td>
+								<td>Row 3</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;table <span class="na">class=</span><span class="s">"striped"</span>&gt;</span>
+  <span class="nt">&lt;thead&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Title 1<span class="nt">&lt;th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/thead&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</pre>
+				
+			</article>
+
+			<!-- Buttons --------------------------------------------------------------------------- -->
+
+			<article>
+
+				<h2 class="title"><a name="buttons"></a>Buttons</h2>
+
+				<div class="example">
+					<input type="submit" value=".btn" class="btn">
+					<input type="submit" value=".btn .alert" class="btn alert">
+					<input type="submit" value=".btn .info" class="btn info">
+					<input type="submit" value=".btn .success" class="btn success">
+					<input type="submit" value=".btn .secondary" class="btn secondary">
+					<input type="submit" value=".btn .white" class="btn white"><br/>
+					<input type="submit" value=".btn .large" class="btn large">
+					<input type="submit" value=".btn .big" class="btn big">
+					<input type="submit" value=".btn" class="btn">
+					<input type="submit" value=".btn .small" class="btn small">
+					<input type="submit" value=".btn .tiny" class="btn tiny"><br/>
+					<input type="submit" value=".btn .full" class="btn full">
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;input <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn"</span>&gt;</span>
+</pre>
+
+			</article>
+
+			<!-- Forms ----------------------------------------------------------------------------- -->
+
+			<article>
+
+				<h2 class="title"><a name="forms"></a>Forms</h2>
+
+				<div class="example">
+					<form action="#">
+						<div class="input">
+							<label for="name">Name</label>
+							<input type="text" id="name">
+						</div>
+						<div class="input">
+							<label for="email">Email</label>
+							<input type="email" id="email">
+						</div>
+						<div class="input">
+							<label>
+								<input type="checkbox">Check out
+							</label>
+						</div>
+						<div class="input">
+							<label>
+								<input type="radio" name="radio">Option 1
+							</label>
+						</div>
+						<div class="input">
+							<label>
+								<input type="radio" name="radio">Option 2
+							</label>
+						</div>
+
+						<input type="submit" class="btn">
+					</form>
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;form <span class="na">action=</span><span class="s">"#"</span>&gt;</span>
+  <span class="nt">&lt;div <span class="na">class=</span><span class="s">"input"</span>&gt;</span>
+    <span class="nt">&lt;label <span class="na">for=</span><span class="s">"name"</span>&gt;</span>Name<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=<span class="s">"name"</span></span>&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</pre>
+
+				<div class="example">
+					<form action="#">
+						<div class="input inline">
+							<input type="text" id="name" placeholder="Name">
+						</div>
+						<div class="input inline">
+							<input type="email" id="email" placeholder="Email">
+						</div>
+						<div class="input inline">
+							<label>
+								<input type="checkbox">Check out
+							</label>
+						</div>
+						<input type="submit" class="btn">
+					</form>
+				</div>
+<pre class="example code">
+<span class="nt">&lt;form <span class="na">action=</span><span class="s">"#"</span>&gt;</span>
+  <span class="nt">&lt;div <span class="na">class=</span><span class="s">"input inline"</span>&gt;</span>
+    <span class="nt">&lt;label <span class="na">for=</span><span class="s">"name"</span>&gt;</span>Name<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=<span class="s">"name"</span></span>&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</pre>
+
+				<div class="example">
+					<form action="#">
+						<div class="input">
+							<label for="name">Name</label>
+							<input type="text" id="name" placeholder="disabled" disabled>
+						</div>
+					</form>
+				</div>
+<pre class="example code">
+<span class="nt">&lt;input <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=<span class="s">"name"</span> disabled</span>&gt;</span>
+</pre>
+
+				<div class="example">
+					<form action="#">
+						<input type="text" id="name" placeholder="Name...">
+						<input type="password" id="password" placeholder="Password...">
+						<input type="datetime" id="datetime" placeholder="Date time...">
+						<input type="datetime-local" id="datetime-local" placeholder="Date time local...">
+						<input type="date" id="date" placeholder="Date...">
+						<input type="month" id="month" placeholder="Month...">
+						<input type="time" id="time" placeholder="Time...">
+						<input type="week" id="week" placeholder="Week...">
+						<input type="number" id="number" placeholder="Number...">
+						<input type="email" id="email" placeholder="Email...">
+						<input type="url" id="url" placeholder="Url...">
+						<input type="search" id="search" placeholder="Search...">
+						<input type="tel" id="datetime" placeholder="Tel...">
+						<input type="color" id="color" placeholder="Color...">
+						<input type="file" id="file" placeholder="File...">
+						<input type="image" id="image" placeholder="Image...">
+						<textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+						<select name="select" id="select">
+							<option value="#">Option 1</option>
+							<option value="#">Option 2</option>
+							<option value="#">Option 3</option>
+							<option value="#">Option 4</option>
+							<option value="#">Option 5</option>
+						</select>
+						<select multiple name="select" id="select">
+							<option value="#">Option 1</option>
+							<option value="#">Option 2</option>
+							<option value="#">Option 3</option>
+							<option value="#">Option 4</option>
+							<option value="#">Option 5</option>
+						</select>
+					</form>
+				</div>
+<pre class="example code">
+</pre>
+				
+			</article>
+
+			<!-- Images ---------------------------------------------------------------------------- -->
+
+			<article>
+
+				<h2 class="title"><a name="images"></a>Images</h2>
+
+				<div class="example">
+					<img src="img/200.jpg" alt="200px" class="img circle">
+					<img src="img/200.jpg" alt="200px" class="img polaroid">
+					<img src="img/200.jpg" alt="200px" class="img rounded">
+				</div>
+
+<pre class="example code">
+<span class="nt">&lt;img <span class="na">alt=</span><span class="s">"200px"</span> <span class="na">src=</span><span class="s">"img/200.jpg"</span> <span class="na">class=</span><span class="s">"img circle"</span>&gt;</span>
+<span class="nt">&lt;img <span class="na">alt=</span><span class="s">"200px"</span> <span class="na">src=</span><span class="s">"img/200.jpg"</span> <span class="na">class=</span><span class="s">"img polaroid"</span>&gt;</span>
+<span class="nt">&lt;img <span class="na">alt=</span><span class="s">"200px"</span> <span class="na">src=</span><span class="s">"img/200.jpg"</span> <span class="na">class=</span><span class="s">"img rounded"</span>&gt;</span>
+</pre>
+
+			</article>
+
+			<!-- Background ------------------------------------------------------------------------ -->
+
+			<article>
+
+				<h2 class="title"><a name="images"></a>Background</h2>
+
+				<ul>
+					<li><code>.bck .theme</code></li>
+					<li><code>.bck .themeligth</code></li>
+					<li><code>.bck .dark</code></li>
+					<li><code>.bck .darkest</code></li>
+					<li><code>.bck .light</code></li>
+					<li><code>.bck .lightest</code></li>
+					<li><code>.bck .alert</code></li>
+					<li><code>.bck .info</code></li>
+					<li><code>.bck .success</code></li>
+				</ul>
+
+				<div class="example">
+
+					<div class="bck theme">
+						theme
+					</div>
+
+					<div class="bck themeligth">
+						themeligth
+					</div>
+
+					<div class="bck dark">
+						dark
+					</div>
+
+					<div class="bck darkest">
+						darkest
+					</div>
+
+					<div class="bck light">
+						light
+					</div>
+
+					<div class="bck lightest">
+						lightest
+					</div>
+
+					<div class="bck alert">
+						alert
+					</div>
+
+					<div class="bck info">
+						info
+					</div>
+
+					<div class="bck success">
+						success
+					</div>
+
+				</div>
+
+			</article>
+
+		</section>
+
+	</section>
+
+</body>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="js/vendor/script.js"></script>
+
+</html>
