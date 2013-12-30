@@ -1,0 +1,51 @@
+// ===========================================
+// LemurCSS by @wazksy
+// tabs.less
+// ===========================================
+
+.tabs {
+	background-color: @white;
+	border: 1px solid @borderColor;
+
+	.control {
+		border-bottom: 1px solid @borderColor;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		background-color: @lightestColor;
+	}
+
+	li {
+		float: left;
+
+		a {
+			border-right: 1px solid @borderColor;
+			color: inherit;
+			display: block;
+			padding: @padding / 2;
+			text-decoration: none;
+			position: relative;
+			background-color: @white;
+
+			&:hover {
+				background-color: @borderColor;
+			}
+		}
+	}
+
+	.active {
+		a {
+			background-color: @white;
+			bottom: -1px;
+
+			&:hover {
+				background-color: red;
+			}
+		}
+	}
+
+	.content {
+		padding: @padding;
+	}
+}

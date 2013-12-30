@@ -1,0 +1,72 @@
+// ===========================================
+// LemurCSS by @wazksy
+// alerts.less
+// ===========================================
+
+.alertbox {
+	background-color: @lightColor;
+	.border-radius(@radius);
+	margin-bottom: @margin;
+	padding: @padding;
+
+	a {
+		color: inherit;
+		font-weight: bold;
+	}
+
+	p:last-of-type {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	&.theme {
+		background-color: @themeColor;
+		color: @white;
+	}
+
+	&.dark {
+		background-color: @darkColor;
+		color: @white;
+	}
+
+	&.alert {
+		background-color: @alertColor;
+		color: @white;
+	}
+
+	&.info {
+		background-color: @infoColor;
+		color: @white;
+	}
+
+	&.success {
+		background-color: @successColor;
+		color: @white;
+	}
+
+	&.close {
+		padding-right: @padding * 2;
+		position: relative;
+
+		> .close {
+			position: absolute;
+			right: @padding / 2;
+			top: @padding / 2;
+			opacity: .5;
+			background-color: transparent;
+			border: 0;
+			color: inherit;
+			cursor: pointer;
+			padding: 0;
+			font-size: @bigFontSize;
+			font-weight: bold;
+
+
+			-webkit-appearance: none;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}

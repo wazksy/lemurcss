@@ -1,0 +1,41 @@
+// ===========================================
+// LemurCSS by @wazksy
+// badges.less
+// ===========================================
+
+.badge {
+	&:after {
+		background-color: @black;
+		.border-radius(@radius);
+		color: @white;
+		content: attr(data-badge);
+		font-size: @tinyFontSize;
+		margin-left: @margin / 2;
+		padding: @padding / 6;
+	}
+
+	&.theme:after {
+		background-color: @themeColor;
+	}
+
+	&.dark:after {
+		background-color: @darkColor;
+	}
+
+	&.alert:after {
+		background-color: @alertColor;
+	}
+
+	&.info:after {
+		background-color: @infoColor;
+	}
+
+	&.success:after {
+		background-color: @successColor;
+	}
+
+	&.white:after {
+		background-color: @white;
+		color: @fontColor;
+	}
+}

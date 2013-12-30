@@ -1,0 +1,69 @@
+// ===========================================
+// LemurCSS by @wazksy
+// callouts.less
+// ===========================================
+
+.callout {
+	background-color: @lightColor;
+	border-left: 3px solid @darkColor;
+	margin-bottom: @margin;
+	padding: @padding;
+	padding-left: @padding * 2;
+
+	p:last-of-type {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	&.theme {
+		border-color: @themeColor;
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: @themeColor;
+		}
+	}
+
+	&.alert {
+		border-color: @alertColor;
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: @alertColor;
+		}
+	}
+
+	&.info {
+		border-color: @infoColor;
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: @infoColor;
+		}
+	}
+
+	&.success {
+		border-color: @successColor;
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: @successColor;
+		}
+	}
+}

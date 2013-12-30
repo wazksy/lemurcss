@@ -1,0 +1,21 @@
+// ===========================================
+// LemurCSS by @wazksy
+// breadcrumbs.less
+// ===========================================
+
+.breadcrumb {
+	background-color: @lightColor;
+	.border-radius(@radius);
+	list-style: none;
+	padding: @padding;
+
+	& > li {
+		display: inline-block;
+
+		& + li:before {
+			color: @fontColor;
+			content: "/\00a0";
+			padding: 0 @padding / 3;
+		}
+	}
+}

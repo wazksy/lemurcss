@@ -1,0 +1,81 @@
+// ===========================================
+// LemurCSS by @wazksy
+// tooltips.less
+// ===========================================
+
+.tip[data-tip] {
+	position: relative;
+	display: inline-block;
+
+
+	&:before {
+		content: '';
+		position: absolute;
+		background: transparent;
+		border: 0.4em solid transparent;
+		z-index: 10002;
+		opacity: 0;
+	}
+
+	&:after {
+		background-color: @black;
+		color: @white;
+		content: attr(data-tip);
+		font-size: @smallFontSize;
+		font-weight: normal;
+		opacity: 0;
+		padding: @padding / 3;
+		pointer-events: none;
+		position: absolute;
+		white-space: nowrap;
+		z-index: 10001;
+	}
+
+	&:hover:before,
+	&:hover:after {
+		opacity: 1;
+	}
+
+	&.left:after {
+		right: 100%;
+		margin-right: 20px;
+	}
+
+	&.left:hover:before {
+		border-left-color: @black;
+	}
+
+}
+
+//> content:attr(data-tip);
+//> background:rgba(0,0,0,0.75);
+//> color:#fff;
+// -webkit-text-shadow:0 -.15em 0 #000;
+// -moz-text-shadow:0 -.15em 0 #000;
+// -ms-text-shadow:0 -.15em 0 #000;
+// -o-text-shadow:0 -.15em 0 #000;
+// text-shadow:0 -.15em 0 #000;
+//> padding:.5em;
+//> font-size:.8em;
+//> font-weight:bold;
+// line-height:1em;
+// white-space:nowrap;
+// -webkit-box-shadow:0 0 1em rgba(0,0,0,0.25);
+// -moz-box-shadow:0 0 1em rgba(0,0,0,0.25);
+// -ms-box-shadow:0 0 1em rgba(0,0,0,0.25);
+// -o-box-shadow:0 0 1em rgba(0,0,0,0.25);
+// box-shadow:0 0 1em rgba(0,0,0,0.25)
+
+/*
+.tip:hover:after {
+	background-color: @black;
+	bottom: 10px;
+	color: @white;
+	content: attr(data-tip);
+	left: 10px;
+	padding: 10px;
+	position: absolute;
+	text-indent: 0;
+	white-space: nowrap;
+	z-index: 999;
+}*/
