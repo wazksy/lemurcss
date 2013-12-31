@@ -1,0 +1,47 @@
+// ===========================================
+// LemurCSS by @wazksy
+// progress.less
+// ===========================================
+
+.progress {
+	background-color: @lightColor;
+	.border-radius(@radius);
+	height: 20px;
+	margin-bottom: @margin;
+	width: 100%;
+
+	.bar {
+		background-color: @themeColor;
+		.border-radius(@radius);
+		color: @white;
+		font-size: @tinyFontSize;
+		padding-right: @padding;
+		padding-top: @padding / 3;
+		text-align: right;
+		height: 100%;
+	}
+
+	&.dark {
+		.bar {
+			background-color: @darkColor;
+		}
+	}
+
+	&.alert {
+		.bar {
+			background-color: @alertColor;
+		}
+	}
+
+	&.info {
+		.bar {
+			background-color: @infoColor;
+		}
+	}
+
+	&.success {
+		.bar {
+			background-color: @successColor;
+		}
+	}
+}
