@@ -1,0 +1,125 @@
+.column {
+  background-color: brown;
+}
+.column.small-12 {
+  width: 100%;
+}
+.column.small-11 {
+  width: 91.66666666666666%;
+}
+.column.small-10 {
+  width: 83.33333333333334%;
+}
+.column.small-9 {
+  width: 75%;
+}
+.column.small-8 {
+  width: 66.66666666666666%;
+}
+.column.small-7 {
+  width: 58.333333333333336%;
+}
+.column.small-6 {
+  width: 50%;
+}
+.column.small-5 {
+  width: 41.66666666666667%;
+}
+.column.small-4 {
+  width: 33.33333333333333%;
+}
+.column.small-3 {
+  width: 25%;
+}
+.column.small-2 {
+  width: 16.666666666666664%;
+}
+.column.small-1 {
+  width: 8.333333333333332%;
+}
+.column.small-pull-12 {
+  left: 100%;
+}
+.column.small-pull-11 {
+  left: 91.66666666666666%;
+}
+.column.small-pull-10 {
+  left: 83.33333333333334%;
+}
+.column.small-pull-9 {
+  left: 75%;
+}
+.column.small-pull-8 {
+  left: 66.66666666666666%;
+}
+.column.small-pull-7 {
+  left: 58.333333333333336%;
+}
+.column.small-pull-6 {
+  left: 50%;
+}
+.column.small-pull-5 {
+  left: 41.66666666666667%;
+}
+.column.small-pull-4 {
+  left: 33.33333333333333%;
+}
+.column.small-pull-3 {
+  left: 25%;
+}
+.column.small-pull-2 {
+  left: 16.666666666666664%;
+}
+.column.small-pull-1 {
+  left: 8.333333333333332%;
+}
+.column.small-pull-0 {
+  left: 0;
+}
+.column.small-push-12 {
+  right: 100%;
+}
+.column.small-push-11 {
+  right: 91.66666666666666%;
+}
+.column.small-push-10 {
+  right: 83.33333333333334%;
+}
+.column.small-push-9 {
+  right: 75%;
+}
+.column.small-push-8 {
+  right: 66.66666666666666%;
+}
+.column.small-push-7 {
+  right: 58.333333333333336%;
+}
+.column.small-push-6 {
+  right: 50%;
+}
+.column.small-push-5 {
+  right: 41.66666666666667%;
+}
+.column.small-push-4 {
+  right: 33.33333333333333%;
+}
+.column.small-push-3 {
+  right: 25%;
+}
+.column.small-push-2 {
+  right: 16.666666666666664%;
+}
+.column.small-push-1 {
+  right: 8.333333333333332%;
+}
+.column.small-push-0 {
+  right: 0;
+}
+.visible.small {
+  display: block;
+}
+.visible.medium,
+.visible.large,
+.visible.x-large {
+  display: none;
+}

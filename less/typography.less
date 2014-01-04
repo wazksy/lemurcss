@@ -14,7 +14,7 @@ dl,
 ol,
 p,
 ul {
-	margin-bottom: @margin;
+	margin-bottom: @gutter;
 }
 
 b,
@@ -42,7 +42,7 @@ var {
 }
 
 dd {
-	margin-left: @margin;
+	margin-left: @gutter;
 }
 
 dfn {
@@ -66,7 +66,7 @@ h5,
 h6 {
 	font-weight: inherit;
 	line-height: 1em;
-	margin-bottom: @margin / 2;
+	margin-bottom: @gutter / 2;
 }
 
 h1 {
@@ -101,7 +101,7 @@ mark {
 
 ol,
 ul {
-	padding-left: @margin;
+	padding-left: @gutter;
 }
 
 ol ol,
@@ -129,12 +129,12 @@ pre {
 }
 
 small {
-	font-size: 80%;
+	font-size: 0.8em;
 }
 
 sub,
 sup {
-	font-size: 75%;
+	font-size: 0.7em;
 	line-height: 0;
 	position: relative;
 	vertical-align: baseline;
@@ -238,8 +238,8 @@ h1.title,
 h2.title,
 h3.title {
 	border-bottom: 1px solid @borderColor;
-	margin-bottom: @margin;
-	padding-bottom: @padding / 4;
+	margin-bottom: @gutter;
+	padding-bottom: @gutter / 4;
 }
 
 // list

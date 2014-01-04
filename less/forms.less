@@ -9,7 +9,7 @@ select,
 textarea {
 	font-family: inherit;
 	line-height: @lineHeight;
-	margin: 0 0 @margin / 4 0;
+	margin: 0 0 @gutter / 4 0;
 	vertical-align: baseline;
 }
 
@@ -23,7 +23,7 @@ input[type="submit"] {
 
 fieldset {
 	border-width: 0;
-	margin-bottom: @margin;
+	margin-bottom: @gutter;
 }
 
 input,
@@ -125,7 +125,7 @@ label {
 	color: inherit;
 	display: block;
 	font-size: @fontSize;
-	margin-bottom: @margin / 4;
+	margin-bottom: @gutter / 4;
 	position: relative;
 	top: 2px;
 	vertical-align: baseline;
@@ -137,7 +137,7 @@ legend {
 	color: inherit;
 	display: block;
 	font-size: @bigFontSize;
-	margin-bottom: @margin;
+	margin-bottom: @gutter;
 	padding-bottom: 0.5em;
 	width: 100%;
 }
@@ -150,10 +150,10 @@ textarea {
 // classes
 
 .input {
-	margin-bottom: @margin / 2;
+	margin-bottom: @gutter / 2;
 
 	&.inline {
 		display: inline-block;
-		margin-right: @margin / 2;
+		margin-right: @gutter / 2;
 	}
 }

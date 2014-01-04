@@ -32,7 +32,7 @@
 
 	// Text
 	@fontFamily 			: Arial, sans-serif;
-	@fontSize 				: 16px;
+	@fontSize 				: 1rem;
 	@lineHeight 			: 1.2;
 
 	// Color
@@ -44,9 +44,8 @@
 	@transitionTime 		: 0.25s;
 
 	// Layout
-	@margin 				: 0.8em; // Márgenes verticales y horizontales
+	@gutter 				: 1em;
 	@maxWidth 				: 1024px;
-	@padding 				: 1em;
 	@radius 				: 2px;
 
 	// Links
@@ -56,12 +55,12 @@
 	@linkVisitedColor		: @linkFocusColor;
 
 	// Heading
-	@h1FontSize 			: 2.6em;
-	@h2FontSize 			: 2.2em;
-	@h3FontSize 			: 1.8em;
-	@h4FontSize 			: 1.6em;
-	@h5FontSize 			: 1.3em;
-	@h6FontSize 			: 1em;
+	@h1FontSize 			: 1.4rem;
+	@h2FontSize 			: 1.3rem;
+	@h3FontSize 			: 1.2rem;
+	@h4FontSize 			: 1.1rem;
+	@h5FontSize 			: 1rem;
+	@h6FontSize 			: .8rem;
 
 	// Alternative font
 	@altFontFamily 			: Georgia, Times;
@@ -91,22 +90,21 @@
 // THEME			================================
 
 	// Fonts size
-	@largeFontSize 			: 1.3em;
-	@bigFontSize 			: 1.2em;
-	@smallFontSize 			: 0.8em;
-	@tinyFontSize 			: 0.7em;
+	@largeFontSize 			: 1.4rem;
+	@bigFontSize 			: 1.2rem;
+	@smallFontSize 			: .8rem;
+	@tinyFontSize 			: .7rem;
 
 	// Buttons
 	@buttonColor 			: @themeColor;
 
-// BREAK POINTS		================================
+// MEDIA QUERIES	================================
 
-	// Break point - small screen first
-	@bp1 					: 30em;
-	@bp2 					: 37.5em;
-	@bp3 					: 48em;
-	@bp4 					: 56.25em;
-	@bp5 					: 68.75em;
+	@x-small: 0;
+	@small: 20em;
+	@medium: 48em;
+	@large: 62em;
+	@x-large: 75em;
 
 
 // FONT AWESOME

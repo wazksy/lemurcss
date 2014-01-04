@@ -1,0 +1,28 @@
+// ===========================================
+// LemurCSS by @wazksy
+// media-queries.less
+// ===========================================
+
+@media only screen and (min-width: @small) {
+	@import "media-queries/small.less";
+}
+@media only screen and (min-width: @medium) {
+	@import "media-queries/medium.less";
+}
+@media only screen and (min-width: @large) {
+	@import "media-queries/large.less";
+}
+@media only screen and (min-width: @x-large) {
+	@import "media-queries/x-large.less";
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+	@import "media-queries/2x.less";
+}
+
+@media print {
+	@import "media-queries/print.less";
+}

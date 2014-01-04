@@ -6,8 +6,8 @@
 .alertbox {
 	background-color: @lightColor;
 	.border-radius(@radius);
-	margin-bottom: @margin;
-	padding: @padding;
+	margin-bottom: @gutter;
+	padding: @gutter;
 
 	a {
 		color: inherit;
@@ -45,13 +45,13 @@
 	}
 
 	&.close {
-		padding-right: @padding * 2;
+		padding-right: @gutter * 2;
 		position: relative;
 
 		> .close {
 			position: absolute;
-			right: @padding / 2;
-			top: @padding / 2;
+			right: @gutter / 2;
+			top: @gutter / 2;
 			opacity: .5;
 			background-color: transparent;
 			border: 0;
@@ -60,8 +60,6 @@
 			padding: 0;
 			font-size: @bigFontSize;
 			font-weight: bold;
-
-
 			-webkit-appearance: none;
 
 			&:hover {

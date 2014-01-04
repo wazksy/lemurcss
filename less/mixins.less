@@ -29,6 +29,14 @@
 	box-sizing: @boxSize;
 }
 
+// .font-size(Value)
+
+.font-size(@size: 16) {
+	@rem: (@size / 10);
+	font-size: @size * 1px; // fallback
+	font-size: ~"@{rem}rem";
+}
+
 // .opacity(Value);
 
 .opacity(@opacity: 0.5) {

@@ -19,7 +19,7 @@ section.wrapper {
 
 			a {
 				display: block;
-				padding: @padding / 2;
+				padding: @gutter / 2;
 				text-decoration: none;
 				width: 100%;
 
@@ -42,8 +42,8 @@ section.wrapper {
 	background-color: @white;
 	border: 1px solid @borderColor;
 	.border-radius(@radius);
-	padding: @padding;
-	padding-top: @padding * 2;
+	padding: @gutter;
+	padding-top: @gutter * 2;
 	position: relative;
 
 	&:after {
@@ -61,7 +61,7 @@ section.wrapper {
 	&.code {
 		background-color: @borderColor;
 		font-size: 0.8em;
-		margin-bottom: @margin;
+		margin-bottom: @gutter;
 	}
 }
 
